@@ -106,7 +106,7 @@ const Dashboard: React.FC = () => {
           {movies.map((movie) => (
             <Link
               key={movie.id}
-              to={`/repositories/${movie.title}`}
+              to={`/repositories/${encodeURIComponent(movie.title)}`}
             >
               <img
                 src={`https://image.tmdb.org/t/p/w220_and_h330_face/${movie.poster_path}`}
