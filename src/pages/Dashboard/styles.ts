@@ -15,15 +15,26 @@ export const Title = styled.h1`
 
 export const Form = styled.form<FormProps>`
   margin-top: 40px;
-  max-width: 700px;
+  max-width: 800px;
   display: flex;
+
+  select {
+    flex: 1;
+    height: 70px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    color: #3a3a3a;
+    border: 2px solid #fff;
+    border-right: 0;
+
+  }
 
   input {
     flex: 1;
     height: 70px;
     padding: 0 24px;
     border: 0;
-    border-radius: 5px 0 0 5px;
     color: #3a3a3a;
     border: 2px solid #fff;
     border-right: 0;
@@ -63,7 +74,7 @@ export const Error = styled.span`
 
 export const Movies = styled.div`
   margin-top: 40px;
-  max-width: 700px;
+  max-width: 800px;
 
   a {
     background: #fff;
